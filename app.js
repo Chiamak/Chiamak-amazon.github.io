@@ -42,7 +42,8 @@ function openCard(){
 
 const setOpt = document.querySelectorAll('.set-opt');
 
-const sof = document.querySelectorAll('.set-opt-false');
+// const sof = document.querySelectorAll('.set-opt-false');
+const a = document.querySelectorAll('.search');
 const sopImg = document.querySelectorAll('.set-img');
 const sop = document.querySelectorAll('.sop');
 
