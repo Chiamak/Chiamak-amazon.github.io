@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <header class="menu-bar">
+        <a tabindex="0" href="https://www.shopify.com"><img src="https://crushingit.tech/hackathon-assets/shopify-icon-desktop.svg" alt="shopify-logo" class="logo"></a>
+        <a tabindex="0" href="https://www.shopify.com"><img src="https://crushingit.tech/hackathon-assets/shopify-icon.svg" alt="shopify-logo" class="small"></a>
+        <div class="menu-search" aria-roledescription="a search field">
+            <svg xmlns="https://crushingit.tech/hackathon-assets/icon-search.svg" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-roledescription="search button">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.3226 13.3833C11.3996 14.0841 10.2484 14.5 9 14.5C5.96243 14.5 3.5 12.0376 3.5 9C3.5 5.96243 5.96243 3.5 9 3.5C12.0376 3.5 14.5 5.96243 14.5 9C14.5 10.2484 14.0841 11.3996 13.3833 12.3226L16.2803 15.2197C16.5732 15.5126 16.5732 15.9874 16.2803 16.2803C15.9874 16.5732 15.5126 16.5732 15.2197 16.2803L12.3226 13.3833ZM13 9C13 11.2091 11.2091 13 9 13C6.79086 13 5 11.2091 5 9C5 6.79086 6.79086 5 9 5C11.2091 5 13 6.79086 13 9Z" fill="#B5B5B5"/>
+              </svg>
+            <input type="text" placeholder="Search" aria-roledescription="a search bar">
+        </div>
+        <div class="menu-other">
+            <button class="menu-bell" tabindex="1" aria-expanded="false" aria-roledescription="a clickable bell that expands to show an alert">
+                <svg width="20" height="20" viewBox="0 0 21 20" fill="none" xmlns="https://crushingit.tech/hackathon-assets/icon-bell.svg" >
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.75203 14.4239L5.3061 14.1427C3.45144 13.9295 2.92542 11.4844 4.52838 10.5274L4.5933 10.4886C5.466 9.96761 6.00045 9.02609 6.00045 8.00969V7.5C6.00045 5.01472 8.01517 3 10.5005 3C12.9857 3 15.0005 5.01472 15.0005 7.5V8.00969C15.0005 9.02609 15.5349 9.96761 16.4076 10.4886L16.4725 10.5274C18.0755 11.4844 17.5495 13.9295 15.6948 14.1427L13.152 14.435V14.8C13.152 16.2912 11.9432 17.5 10.452 17.5C8.96086 17.5 7.75203 16.2912 7.75203 14.8V14.4239ZM11.652 14.5H9.25203V14.8C9.25203 15.4627 9.78929 16 10.452 16C11.1148 16 11.652 15.4627 11.652 14.8V14.5ZM8.50045 13H12.5005L15.5235 12.6525C15.953 12.6032 16.0748 12.0369 15.7036 11.8153L15.6387 11.7766C15.5591 11.7291 15.4815 11.6793 15.4057 11.6273C15.2506 11.521 15.1036 11.4055 14.9651 11.2818C14.9405 11.2598 14.9162 11.2377 14.8922 11.2152C14.0144 10.395 13.5005 9.23833 13.5005 8.00969V7.5C13.5005 5.84315 12.1573 4.5 10.5005 4.5C8.8436 4.5 7.50045 5.84315 7.50045 7.5V8.00969C7.50045 9.23833 6.98651 10.395 6.10871 11.2152C6.08469 11.2377 6.06039 11.2598 6.03583 11.2818C5.89734 11.4055 5.75029 11.521 5.59523 11.6273C5.51945 11.6793 5.44176 11.7291 5.36222 11.7766L5.29729 11.8153C4.9261 12.0369 5.0479 12.6032 5.47739 12.6525L8.50045 13Z" fill="#fff"/>
+                </svg> 
+            </button>
+            <button tabindex="2" class="menu-admin a" aria-expanded="false" aria-roledescription="Profile image placeholder">
+                <h3>Davii Collections</h3>
+                <p>DC</p>
+            </button>
+        </div>
+    </header>
+    <section class="alert blind">
+        <div class="alert-in" aria-expanded="true" aria-roledescription="An alert window shown when the bell is clicked. Click on the bell again to close this window">
+            <h2>Alert</h2>
+            <div class="alert-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-roledescription="A menulike button">
+                    <path d="M3 6C3 5.58579 3.33579 5.25 3.75 5.25H16.25C16.6642 5.25 17 5.58579 17 6C17 6.41421 16.6642 6.75 16.25 6.75H3.75C3.33579 6.75 3 6.41421 3 6Z" fill="#616161"/>
+                    <path d="M6.75 14C6.75 13.5858 7.08579 13.25 7.5 13.25H12.5C12.9142 13.25 13.25 13.5858 13.25 14C13.25 14.4142 12.9142 14.75 12.5 14.75H7.5C7.08579 14.75 6.75 14.4142 6.75 14Z" fill="#616161"/>
+                    <path d="M5.5 9.25C5.08579 9.25 4.75 9.58579 4.75 10C4.75 10.4142 5.08579 10.75 5.5 10.75H14.5C14.9142 10.75 15.25 10.4142 15.25 10C15.25 9.58579 14.9142 9.25 14.5 9.25H5.5Z" fill="#616161"/>
+                </svg>
+                <img src="https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg" alt="tick icon" width="20px" height="20px">
+            </div>
+        </div>
+        <div class="alert-info" aria-roledescription="The alert message">
+                <p>Alerts about your store and account will show here</p>
+            </div>
+    </section>
+    <section class="my-shop blind" aria-roledescription="Section for the user menu" aria-expanded="true">
+        <div class="my-shop-head">
+            <div class="my-dc-a">
+                <div class="menu-admin b">
+                    <p>DC</p>
+                    <h3>Davii Collections</h3>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M13.3332 4L5.99984 11.3333L2.6665 8" stroke="#303030" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+            </div>
+            <div class="my-dc-b" tabindex="2">
+                <img src="https://crushingit.tech/hackathon-assets/icon-store.svg" alt="svg-store-icon">
+                <p>All stores</p>
+            </div>
+        </div>
+        <div class="my-shop-mid" aria-roledescription="user-links">
+            <a href="admin.shopify.com" tabindex="3" title="Help-center">Help Center</a>
+            <a href="admin.shopify.com" tabindex="4" title="changelog">Changelog</a>
+            <a href="admin.shopify.com" tabindex="5" title="Community-forums">Community forums</a>
+            <a href="admin.shopify.com" tabindex="6" title="HireaShopifyPartner">Hire a Shopify Partner</a>
+            <a href="admin.shopify.com" tabindex="7" title="Keyboardshortcuts">Keyboard shortcuts</a>
+        </div>
+        <div class="my-shop-last">
+            <div class="my-email" title="username and email">
+                <h3>David Michael</h3>
+                <span aria-roledescription="user email">davidmichael@gmail.com</span>
+            </div>
+            <a href="admin.shopify.com" tabindex="8" title="Manageaccount">Manage account</a>
+            <a href="admin.shopify.com" tabindex="9" title="Logout">Log out</a>
+        </div>
+    </section>
+    <main>
+        <section class="shopify-main1" aria-roledescription="trial-message">
+            <p>Extend your trial for $1/month for 3 months on select plans.</p>
+            <div class="link-grp">
+                <a href="https://www.shopify.com/pricing" tabindex="10">Select a plan</a>
+                <button onclick="closeTrial()" tabindex="11" class="butt">
+                    <svg xmlns="https://crushingit.tech/hackathon-assets/icon-cross.svg" width="20" height="20" viewBox="0 0 20 20" fill="none" title="close icon">
+                        <path d="M13.9697 15.0303C14.2626 15.3232 14.7374 15.3232 15.0303 15.0303C15.3232 14.7374 15.3232 14.2626 15.0303 13.9697L11.0607 10L15.0303 6.03033C15.3232 5.73744 15.3232 5.26256 15.0303 4.96967C14.7374 4.67678 14.2626 4.67678 13.9697 4.96967L10 8.93934L6.03033 4.96967C5.73744 4.67678 5.26256 4.67678 4.96967 4.96967C4.67678 5.26256 4.67678 5.73744 4.96967 6.03033L8.93934 10L4.96967 13.9697C4.67678 14.2626 4.67678 14.7374 4.96967 15.0303C5.26256 15.3232 5.73744 15.3232 6.03033 15.0303L10 11.0607L13.9697 15.0303Z" fill="#E3E3E3"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <section class="shopify-main2">
+            <div class="set-guide" aria-roledescription="set-up guide section">
+                <div class="sg-text">
+                    <div class="sg-t">
+                        <h3>Setup guide</h3>
+                        <h4>Use this personalized guide to get your store up and running.</h4>
+                    </div>
+                    <div class="range" aria-roledescription="Progressbar for completion of the setup">
+                        <p><span id="count">0</span>/5 completed</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="72" height="4" viewBox="0 0 72 4" fill="none">
+                            <rect width="72" height="4" rx="2" fill="#E3E3E3"/>
+                            <rect width="0" height="4" fill="#1A1A1A" class="reat"/>
+                          </svg>
+                    </div>
+                </div>
+                <button class="a-down" onclick="openCard()" tabindex="12" aria-expanded="true"><img src="https://crushingit.tech/hackathon-assets/icon-arrow-down.svg" alt="icon-arrow-down"></button>
+                <button class="a-up blind" onclick="closeCard()" tabindex="13" aria-expanded="false"><img src="https://crushingit.tech/hackathon-assets/icon-arrow-up.svg" alt="icon-arrow-up"></button>
+            </div>
+            <ul class="set-options blind" aria-roledescription="set-guide options">
+                <li class="sop"> 
+                    <button class="svg-click" tabindex="14">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="svg1">
+                            <circle cx="12" cy="12" r="10" stroke="#8A8A8A" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+                        </svg>
+                          <img src="https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg" alt="svg2" class="svg2 blind" width="24px" height="24px">
+                    </button>
+                    <div class="set-opt" aria-roledescription="set-guide option1">
+                        <div class="set-opt-true">
+                            <button tabindex="15">Customize your online store</button>
+                            <div class="set-opt-false blind">
+                                <p>Choose a theme and add your logo , colors, and images to reflect your brand
+                                <a href="https://help.shopify.com/en/manual/products/add-update-products">Learn more</a></p>
+                                <a href="#" class="link butt">Customize theme</a>
+                            </div>
+                        </div>
+                        <img src="https://crushingit.tech/hackathon-assets/customise-store.png" alt="clip-art of a paint brush and color panel" class="set-img blind">
+                    </div>
+                </li>
+                <li class="sop"> 
+                    <button class="svg-click" tabindex="16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="svg1">
+                            <circle cx="12" cy="12" r="10" stroke="#8A8A8A" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+                        </svg>
+                          <img src="https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg" alt="svg2" class="svg2 blind" width="24px" height="24px">
+                    </button>
+                    
+                    <div class="set-opt" aria-roledescription="set-guide option2">
+                        <div class="set-opt-true">
+                            <button tabindex="17">Add your first product</button>
+                            <div class="set-opt-false blind">
+                                <p>Write a description, add photos, and set pricing for the products you plan to sell.
+                                <a href="https://help.shopify.com/en/manual/products/add-update-products">Learn more</a></p>
+                                <div class="bulink">
+                                    <a href="#" class="link butt">Add product</a>
+                                    <a href="#" class="lonk"> Import product</a>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="https://crushingit.tech/hackathon-assets/product.png" alt="image of a t-shirt, sunglass and a sneakers" class="set-img blind">
+                    </div>
+                </li>
+                <li class="sop"> 
+                    <button class="svg-click" tabindex="18">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="svg1">
+                            <circle cx="12" cy="12" r="10" stroke="#8A8A8A" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+                        </svg>
+                          <img src="https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg" alt="svg2" class="svg2 blind" width="24px" height="24px">
+                    </button>
+                    
+                    <div class="set-opt" aria-roledescription="set-guide option3">
+                        <div class="set-opt-true">
+                            <button tabindex="19">Add a custom domain</button>
+                            <div class="set-opt-false blind">
+                                <p>Your current domain is 222219.myshopify.com but you can add a custom domain to help customers find your online store.
+                                <a href="https://help.shopify.com/en/manual/products/add-update-products">Learn more</a></p>
+                                <a href="#" class="link butt">Add domain</a>
+                            </div>
+                        </div>
+                        <img src="https://crushingit.tech/hackathon-assets/website.png" alt="an image with a green and white background with www written on top" class="set-img blind">
+                    </div>
+                </li>
+                <li class="sop"> 
+                    <button class="svg-click" tabindex="20">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="svg1">
+                            <circle cx="12" cy="12" r="10" stroke="#8A8A8A" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+                        </svg>
+                          <img src="https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg" alt="svg2" class="svg2 blind" width="24px" height="24px">
+                    </button>
+                    
+                    <div class="set-opt" aria-roledescription="set-guide option4">
+                        <div class="set-opt-true">
+                            <button tabindex="21">Name your store</button>
+                            <div class="set-opt-false blind">
+                                <p>Your temporary store name is currently Davii collections. 
+                                    The store name appears in your admin and your online store.
+                                <a href="https://help.shopify.com/en/manual/products/add-update-products">Learn more</a></p>
+                                <a href="#" class="link butt">Name store</a>
+                            </div>
+                        </div>
+                        <img src="https://crushingit.tech/hackathon-assets/name-store.png" alt="an image of a guy wth white shirt" class="set-img blind">
+                    </div>
+                </li>
+                <li class="sop"> 
+                    <button class="svg-click" tabindex="22">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="svg1">
+                            <circle cx="12" cy="12" r="10" stroke="#8A8A8A" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+                        </svg>
+                          <img src="https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg" alt="svg2" class="svg2 blind" width="24px" height="24px">
+                    </button>
+                    
+                    <div class="set-opt" aria-roledescription="set-guide option5">
+                        <div class="set-opt-true">
+                            <button tabindex="23">Set up a payment procedure</button>
+                            <div class="set-opt-false blind">
+                                <p>Choose a payment provider to start accepting payments. You’ll need to 
+                                    create an account with the payment provider and set it up with your Shopify store.
+                                <a href="https://help.shopify.com/en/manual/products/add-update-products">Learn more</a></p>
+                                <a href="#" class="link butt">Set up payment</a>
+                            </div>
+                        </div>
+                        <img src="https://crushingit.tech/hackathon-assets/payment.png" alt="image of a visa card" class="set-img blind">
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <script src="app.js" async></script>
+</body>
+</html>
